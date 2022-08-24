@@ -45,7 +45,7 @@
     }
   </style>
 
-  <body class="debug">
+  <body class="">
     <!-- SECTION NAVBAR -->
     <!-- TODO center nav-content ✅ -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-3">
@@ -91,66 +91,70 @@
       </div>
     </nav>
 
-    <main>
+    <main class="container-fluid">
       <!-- SECTION SIGN IMAGE -->
-      <section class="sign-image  mb-2">
-        <div class="row">
-          <div class="col-12">
-            <img
-              src="./resources/ASL-2048x1365.png"
-              alt=""
-              class="img-fluid"
-              height=""
-            />
+      <section
+        class="sign-image row mb-2 hero-img"
+        style="
+          background-image: url(./resources/ASL-2048x1365.png);
+        
+        "
+      ></section>
+
+      <!-- SECTION ABOUT -->
+      <!-- TODO add a Learn More Button -->
+
+      <section class="about row">
+        <div class="col-12 bg-dark">
+          <div class="text-light text-start p-5">
+            Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Labore, vitae exercitationem! Quia laborum accusamus incidunt
+            voluptatem modi eius repellat, provident, tempora asperiores nam
+            tempore quisquam corporis in, fuga atque dolorem! dolor sit amet
+            consectetur adipisicing elit. In illo aliquid quae quos eligendi
+            facere? Quidem consequuntur iste neque amet sit obcaecati aliquam.
+            <br />
+          </div>
+          <div
+            class="col-12 d-flex justify-content-end pe-5 bg-dark text-light"
+          >
+            <i class="mdi mdi-arrow-right-box fs-1">LEARN MORE</i>
           </div>
         </div>
       </section>
 
-      <!-- SECTION ABOUT -->
-      <!-- TODO add a Learn More Button -->
-      <section class="about container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class=" about-text bg-dark text-light text-start p-5">
-              Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Labore, vitae exercitationem! Quia laborum accusamus
-              incidunt voluptatem modi eius repellat, provident, tempora
-              asperiores nam tempore quisquam corporis in, fuga atque dolorem!
-              dolor sit amet consectetur adipisicing elit. In illo aliquid quae
-              quos eligendi facere? Quidem consequuntur iste neque amet sit
-              obcaecati aliquam.
-              <br>
-              <div class="col-12 d-flex justify-content-end pe-5"> <i class="mdi mdi-arrow-right-box fs-1">LEARN MORE</i>
-              </div>
-             
-            
-          </div>
-        </div>
-        </div>
-      </section>
       <!-- SECTION 3 IMAGES -->
-      <section class="blog-store-experts container-fluid bg-light">
-        <div class="row py-5 justify-content-center">
-          <div class="col-3   text-center">
-            <img src="https://source.unsplash.com/random/200x200?sig=1" class="img-fluid" />
-            <div class="bottom-image-text">
-              <p>Lorem, ipsum dolor wrem.</p>
-            </div>
+      <section
+        class="blog-store-experts row justify-content-center py-5 bg-light"
+      >
+        <div class="col-12 col-md-3 text-center">
+          <img
+            src="https://source.unsplash.com/random/200x200?sig=1"
+            class="img-fluid"
+          />
+          <div class="bottom-image-text">
+            <p>Lorem, ipsum dolor wrem.</p>
           </div>
-          <div class="col-3  text-center">
-            <img src="https://source.unsplash.com/random/200x200?sig=1" class="img-fluid"/>
-            <div class="bottom-image-text">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
+        </div>
+        <div class="col-12 col-md-3 text-center">
+          <img
+            src="https://source.unsplash.com/random/200x200?sig=1"
+            class="img-fluid"
+          />
+          <div class="bottom-image-text">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
-          <div class="col-3  text-center">
-            <img src="https://source.unsplash.com/random/200x200?sig=1" class="img-fluid"/>
-            <div class="bottom-image-text">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Explicabo, enim!
-              </p>
-            </div>
+        </div>
+        <div class="col-12 col-md-3 text-center">
+          <img
+            src="https://source.unsplash.com/random/200x200?sig=1"
+            class="img-fluid"
+          />
+          <div class="bottom-image-text">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo, enim!
+            </p>
           </div>
         </div>
       </section>
@@ -158,7 +162,7 @@
     <!-- SECTION FOOTER -->
     <footer class="container-fluid bg-dark text-light p-4">
       <div class="row justify-content-center">
-        <div class="footer-nav col-4" id="">
+        <div class="footer-nav col-12 col-md-4" id="">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active text-light" aria-current="page" href="#"
@@ -177,10 +181,10 @@
           </ul>
         </div>
 
-        <div class="col-3 ms-5 me-3">
+        <div class="col-12 col-md-3">
           <div class=""><p>612.235.234 signlanguage@gmail.com</p></div>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-md-3 d-flex">
           <p>
             2365 W. Winstone Ave. <br />
             Meridian, Id, 83642
