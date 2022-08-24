@@ -1,0 +1,45 @@
+*{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+footer{
+padding-left: 1rem;
+padding-top: 1rem;
+padding-right: 1rem;
+padding-bottom: 1rem;
+width: 100vw;
+
+}
+
+.navbar-nav {
+  float: none;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.navbar-nav > li {
+  display: inline-block;
+  float: none;
+}
+
+.navbar-brand {
+  margin-left: 5%;
+  padding: 1.75rem;
+}
+
+
+
+.container,
+.container-fluid {
+  padding: 0;
+}
+
+.about-text {
+  font-size: 14pt;
+  padding: 2rem 10rem 2rem 10rem;
+}
+.blog-store-experts {
+ 
+
+}
