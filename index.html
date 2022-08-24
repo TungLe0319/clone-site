@@ -20,10 +20,33 @@
       href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,500&family=Orbitron:wght@500&family=Poppins:wght@200&family=Roboto:ital,wght@1,300&family=Titan+One&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
+  <!-- SECTION DEBUG STYLE -->
+  <style>
+    body.debug .container,
+    body.debug .container-fluid {
+      outline: 2px double blue;
+      outline-offset: -2px;
+    }
 
-  <body>
+    body.debug .row {
+      outline: 2px dashed red;
+      outline-offset: -2px;
+    }
+
+    body.debug [class*='col-'] {
+      outline: 2px dotted forestgreen;
+      outline-offset: -3px;
+    }
+  </style>
+
+  <body class="debug">
+    <!-- SECTION NAVBAR -->
     <!-- TODO center nav-content ✅ -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-3">
       <div class="container-fluid">
@@ -67,73 +90,109 @@
     </nav>
 
     <main>
+      <!-- SECTION SIGN IMAGE -->
       <section class="sign-image container-fluid mb-2">
-        <img
-          src="./resources/ASL-2048x1365.png"
-          alt=""
-          height="300px"
-          width="100%"
-        />
-      </section>
-
-      <!-- TODO add a Learn More Button -->
-      <section class="about container-fluid">
-        <div class="about-text bg-dark text-light text-start">
-          Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Labore, vitae exercitationem! Quia laborum accusamus incidunt
-          voluptatem modi eius repellat, provident, tempora asperiores nam
-          tempore quisquam corporis in, fuga atque dolorem! dolor sit amet
-          consectetur adipisicing elit. In illo aliquid quae quos eligendi
-          facere? Quidem consequuntur iste neque amet sit obcaecati aliquam
+        <div class="row">
+          <div class="col-12">
+            <img
+              src="./resources/ASL-2048x1365.png"
+              alt=""
+              class="img-fluid"
+              height=""
+            />
+          </div>
         </div>
       </section>
 
-      <section class="blog-store-experts container  text-center p-5 ">
-        <div class="row ">
-          <div class="col  ">
-            <img src="https://via.placeholder.com/150" alt="" />
-
-            <img src="https://via.placeholder.com/150" alt="" />
-            
-            <img src="https://via.placeholder.com/150" alt="" />
+      <!-- SECTION ABOUT -->
+      <!-- TODO add a Learn More Button -->
+      <section class="about container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="about-text bg-dark text-light text-start">
+              Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Labore, vitae exercitationem! Quia laborum accusamus
+              incidunt voluptatem modi eius repellat, provident, tempora
+              asperiores nam tempore quisquam corporis in, fuga atque dolorem!
+              dolor sit amet consectetur adipisicing elit. In illo aliquid quae
+              quos eligendi facere? Quidem consequuntur iste neque amet sit
+              obcaecati aliquam
+              <i class="mdi mdi-arrow-right-box fs-1">LEARN MORE</i>
+              <i class="mdi mdi-arrow-left-box fs-1"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION 3 IMAGES -->
+      <section class="blog-store-experts container-fluid">
+        <div class="row p-4 justify-content-center">
+          <div class="col-3">
+            <img src="https://source.unsplash.com/random/200x200?sig=1" />
+            <div class="bottom-image-text">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo, enim!
+              </p>
+            </div>
+          </div>
+          <div class="col-3">
+            <img src="https://source.unsplash.com/random/200x200?sig=1" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo, enim!
+            </p>
+          </div>
+          <div class="col-3">
+            <img src="https://source.unsplash.com/random/200x200?sig=1" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo, enim!
+            </p>
           </div>
         </div>
       </section>
     </main>
-
-    <footer class="bg-dark text-light ">
+    <!-- SECTION FOOTER -->
+    <footer class="container-fluid bg-dark text-light p-4">
       <div class="row">
-        <div class="footer-nav col" id="">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active text-light" aria-current="page" href="#"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Experts</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Store</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
+        <div class="footer-nav col-3" id="">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Experts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="col"><p>612.235.234 <br>
-      signlanguageforall@gmail.com</p></div>
-      <div class="col"><p>2365 W. Winstone Ave. <br>
-      Meridian, Id, 83642</p></div>
-    </div>
-      
+        <div class="col-2">
+          <p>
+            612.235.234 <br />
+            signlanguageforall@gmail.com
+          </p>
+        </div>
+        <div class="col-2">
+          <p>
+            2365 W. Winstone Ave. <br />
+            Meridian, Id, 83642
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script
