@@ -32,10 +32,7 @@ width: 100vw;
 
 }
 
-.container,
-.container-fluid {
-  padding: 0;
-}
+
 
 .about-text {
   font-size: 14pt;
@@ -44,4 +41,8 @@ width: 100vw;
 .blog-store-experts {
  
 
+}
+.bottom-image-text{
+  padding-right: .5rem;
+  padding-left: .5rem;
 }
